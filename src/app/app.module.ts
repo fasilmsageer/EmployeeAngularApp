@@ -13,7 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute=[
   {
-    path:"adminlogin",
+    path:"",
     component:AdminLoginComponent
   },
   {
