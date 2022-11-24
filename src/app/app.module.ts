@@ -9,10 +9,11 @@ import { EmployeeSearchComponent } from './employee-search/employee-search.compo
 import { EmployeeDeleteComponent } from './employee-delete/employee-delete.component';
 import { EmployeeViewComponent } from './employee-view/employee-view.component';
 import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute=[
   {
-    path:"",
+    path:"adminlogin",
     component:AdminLoginComponent
   },
   {
@@ -40,7 +41,8 @@ const myRoute=[
     EmployeeEntryComponent,
     EmployeeSearchComponent,
     EmployeeDeleteComponent,
-    EmployeeViewComponent
+    EmployeeViewComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
