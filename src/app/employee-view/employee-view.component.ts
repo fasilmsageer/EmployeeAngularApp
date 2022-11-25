@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./employee-view.component.css']
 })
 export class EmployeeViewComponent {
-  data = [
+  data:any= [
     {
       "name":"phill",
       "designation":"Engineer Trainee",
