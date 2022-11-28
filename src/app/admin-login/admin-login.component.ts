@@ -7,5 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AdminLoginComponent {
 
+  Username=""
+  Password=""
+
+
+
+  readValue=()=>
+  {
+    let data:any={"Username":this.Username,
+    "Password":this.Password}
+    console.log(data)
   
+  if (this.Username=="admin" && this.Password=="12345") {
+    alert("valid credentials")
+    
+  } else {
+    alert("invalid credentials")
+  }
+}
 }
