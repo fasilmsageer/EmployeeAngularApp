@@ -20,6 +20,8 @@ export class EmployeeEntryComponent {
     "salary":this.salary,
     "email":this.email,
     "EmployeeId":this.EmployeeId}
+    console.log(data)
   }
+  
 
 }

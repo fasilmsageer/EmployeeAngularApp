@@ -10,20 +10,20 @@
                     <table class="table table-borderless">
                         <thead>
                           <tr>
-                            
+                            <th scope="col">Employee ID</th>
                             <th scope="col">Name</th>
                             <th scope="col">Designation</th>
-                            <th scope="col">Salary</th>
                             <th scope="col">Email</th>
                             <th scope="col">Salary</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr *ngFor ="let i of data">
+                            <td>{{i.EmployeeId}}</td>
                             <td>{{i.name}}</td>
                             <td>{{i.designation}}</td>
-                            <td>{{i.salary}}</td>
                             <td>{{i.email}}</td>
+                            <td>{{i.salary}}</td>
                           </tr>
                         </tbody>
                       </table>
