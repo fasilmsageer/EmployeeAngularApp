@@ -10,83 +10,20 @@
                     <table class="table table-borderless">
                         <thead>
                           <tr>
-                            <th scope="col">SI.No</th>
+                            
                             <th scope="col">Name</th>
-                            <th scope="col">Employee Code</th>
+                            <th scope="col">Designation</th>
+                            <th scope="col">Salary</th>
                             <th scope="col">Email</th>
                             <th scope="col">Salary</th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>123</td>
-                            <td>mark@nest.net</td>
-                            <td><button class="btn btn-primary">View</button></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>568</td>
-                            <td>jacob@nest.net</td>
-                            <td><button class="btn btn-primary">View</button></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>5687</td>
-                            <td>larry@nest.net</td>
-                            <td><button class="btn btn-primary">View</button></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">4</th>
-                            <td>Marie</td>
-                            <td>789</td>
-                            <td>marie@nest.net</td>
-                            <td><button class="btn btn-primary">View</button></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">5</th>
-                            <td>Jacqueline</td>
-                            <td>589</td>
-                            <td>jacqueline@nest.net</td>
-                            <td><button class="btn btn-primary">View</button></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">6</th>
-                            <td>Mindy</td>
-                            <td>367</td>
-                            <td>mindy@nest.net</td>
-                            <td><button class="btn btn-primary">View</button></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">7</th>
-                            <td>Alex</td>
-                            <td>25874</td>
-                            <td>alex@nest.net</td>
-                            <td><button class="btn btn-primary">View</button></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">8</th>
-                            <td>Jhonny</td>
-                            <td>369</td>
-                            <td>jhonny@nest.net</td>
-                            <td><button class="btn btn-primary">View</button></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">9</th>
-                            <td>Phill</td>
-                            <td>34896</td>
-                            <td>phill@nest.net</td>
-                            <td><button class="btn btn-primary">View</button></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">10</th>
-                            <td>Haley</td>
-                            <td>246</td>
-                            <td>haley@nest.net</td>
-                            <td><button class="btn btn-primary">View</button></td>
+                          <tr *ngFor ="let i of data">
+                            <td>{{i.name}}</td>
+                            <td>{{i.designation}}</td>
+                            <td>{{i.salary}}</td>
+                            <td>{{i.email}}</td>
                           </tr>
                         </tbody>
                       </table>
